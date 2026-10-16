@@ -6,6 +6,13 @@ Line 328:2 Expected "}" to go with "{"
 html{
   padding-bottom:0px !important;
 }
+@media (min-width: 768px) {
+  .product-page--root .product-page--left-column,
+  .product-page--root .product-page--left-column--container,
+  .product-page--root .product-page--right-column {
+    top: 120px;
+  }
+}
 
 .template--index .transparent_logo{
   display: none !important;
