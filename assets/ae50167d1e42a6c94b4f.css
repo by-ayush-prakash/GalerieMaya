@@ -1,0 +1,328 @@
+/** Shopify CDN: Minification failed
+
+Line 328:2 Expected "}" to go with "{"
+
+**/
+html{
+  padding-bottom:0px !important;
+}
+
+.template--index .transparent_logo{
+  display: none !important;
+}
+.template--index .white_logo{
+  display: none !important;
+}
+.cs-header .header--menu-icon .x-menu--overlap-icon {
+    display: block;
+}
+.header--x-menu{
+  display: none;
+}
+.template--index .cs-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+}
+.template--index .header--root[data-fixed=false][data-fixed-enabled=true] {
+    background-color: transparent;
+    border: none;
+}
+.template--index  .header--root[data-fixed=false][data-fixed-enabled=true] svg {
+  color: #fff !important;
+}
+.template--index  .header--root[data-fixed=false][data-fixed-enabled=true] a {
+    color: #fff !important;
+}
+.template--index .carousel--y-container {
+  height: 100vh !important;
+}
+.featured-content--root[data-image-height="3"] .featured-content--container {
+    min-height: 100%;
+    height: 100vh;
+}
+
+@media screen and (max-width: 767px) {
+    .template--index .header--root[data-fixed=true][data-fixed-enabled=true] {
+        background-color: transparent;
+        border: none;
+    }
+    .template--index  .header--root[data-fixed=true][data-fixed-enabled=true] svg {
+      color: #fff;
+    }
+    .template--index  .header--root[data-fixed=true][data-fixed-enabled=true] a {
+        color: #fff;
+    }
+    .template--index .mb-view {
+        background: #fff !important;
+    }
+    header-root.header--root.mb-view svg.icon--root.icon--menu {
+        color: #000;
+    }
+    .mb-view a.header--cart-toggle {
+        color: #000 !important;
+    }
+    .carousel--dot-nav[data-loaded=true] {
+        display: none;
+    }
+    .template--index{
+       overflow: hidden;
+    }
+}
+
+
+
+.ft-Newsletter input#footer-email {
+    border: none;
+    border-bottom: 1px solid;
+    margin-bottom: 0;
+}
+.ft-Newsletter .footer--form-submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.ft-Newsletter .footer--form-submit button {
+    background-color: transparent;
+    color: #000;
+    font-family: var(--font--paragraph--family);
+    font-weight: var(--font--paragraph--weight);
+    font-style: var(--font--paragraph--style);
+    font-size: var(--font--paragraph--size);
+    line-height: 1.5em;
+}
+ .ft-Newsletter .footer--form-submit button:hover {
+    color: #000;
+}
+.ft-Newsletter .footer--form-container {
+    position: relative;
+}
+.sidebar-footer {
+    padding: 20px 20px 20px 15px;
+}
+.ft-Newsletter input:focus-visible{
+   outline: 0;
+}
+.sidebar-footer ul.footer--menu li {
+    margin-bottom: 10px;
+}
+.ft-nav {
+    padding-bottom: 10px;
+}
+.ft-Newsletter {
+    padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+div#shopify-section-template--16648490549495__bdd8e0e9-5dde-495d-b251-4efd4a13bed0 {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+div#shopify-section-template--16648490549495__bdd8e0e9-5dde-495d-b251-4efd4a13bed0 h2.featured-text--heading{
+    word-break: break-word;
+    FONT-WEIGHT: BOLD;
+    font-size: 25px;
+}
+div#shopify-section-template--16648490549495__1632473305029b8e81 .featured-content--title{
+    display: none;
+}
+
+   .featured-content--title {
+    font-size: 25px!important;
+}
+
+  
+div#shopify-section-template--16648490156279__header-promo .featured-content--description{
+    font-size: 12px!important;
+
+}
+  
+}
+
+.template--collection .newsletter--root {
+    padding-top: 30px;
+}
+
+@media only screen and (max-width: 767px){
+.featured-content--image {
+  heigh:358px!important;
+}}
+
+
+@media screen and (min-width: 769px) {
+.sidebar-footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+}}
+
+@media screen and (max-width: 768px) {
+.sidebar-footer {
+    position: absolute;
+    width: 100%;
+    bottom: 10%;
+}
+}
+
+
+@media only screen and (max-width: 767px){
+  .off-canvas--container {
+    min-height: 100vh !important;
+}
+  .sidebar-footer {
+    bottom: 10%;
+}
+}
+
+.product--label--down {
+    font-size: 12px;
+    color: gray;
+}
+
+.rte a, .rte a:link, .rte a:visited, [data-item=rte-content] a, [data-item=rte-content] a:link, [data-item=rte-content] a:visited{
+    text-decoration: underline !important;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+div#shopify-section-template--16736571457783__main .product-page--right-column {
+    padding: 12px 48px 32px 48px;
+}
+
+}
+
+.header--cart {
+  visibility: hidden;
+}
+.header--search {
+  visibility: hidden;
+}
+/* CRITICAL FIX: CONSISTENT RESPONSIVE PRODUCT GRID */
+
+/* Fix Safari refresh and filter/sort height inconsistencies */
+.product--image-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  /* Use min-height instead of height to prevent JS override conflicts */
+  min-height: 200px; /* Reasonable minimum height */
+}
+
+/* Use padding-top for consistent aspect ratio - this won't conflict with JS */
+.product--image-wrapper::before {
+  content: '';
+  display: block;
+  padding-top: 150%; /* 2:3 aspect ratio */
+  width: 100%;
+}
+
+/* Position the actual image container */
+.product--image-wrapper .product--image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.product--image-wrapper .image--container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* Override the padding-top from theme JS */
+  padding-top: 0 !important;
+}
+
+/* Ensure images fill containers properly */
+.product--image-wrapper .image--container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Fix hover images - force consistent sizing */
+.product--hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.product--root[data-hover-image="loaded"]:hover .product--hover-image {
+  opacity: 1;
+}
+
+.product--hover-image .image--root {
+  width: 100% !important; /* Override inline styles from JS */
+  height: 100%;
+}
+
+.product--hover-image .image--container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* Override padding-top from theme */
+  padding-top: 0 !important;
+}
+
+.product--hover-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* CRITICAL: Don't override height completely - work with JS instead */
+.product--image-wrapper[style*="height: 0px"] {
+  /* When JS sets height to 0, force a minimum */
+  min-height: 200px !important;
+}
+
+.product--image-wrapper[style*="height"] {
+  /* Ensure minimum height even with JS calculations */
+  min-height: 150px !important;
+}
+
+/* Prevent lazy loading from breaking layout in Safari */
+.product--image-wrapper .lazyload,
+.product--image-wrapper .lazyloading,
+.product--image-wrapper .lazyloaded,
+.product--image-wrapper .ls-is-cached {
+  /* Ensure images maintain proper positioning */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+/* Grid layout stability - important for filter/sort updates */
+.collection--body--grid .product--root {
+  position: relative;
+  width: 100%;
+}
+
+/* Safari-specific optimizations */
+@supports (-webkit-appearance: none) {
+  .product--image-wrapper {
+    /* Force Safari hardware acceleration */
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+} 
